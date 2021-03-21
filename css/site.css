@@ -1,0 +1,12 @@
+.navbar {
+    background-color: #1D0807;
+}
+
+.navbar .nav-link{
+    color: #DBCDAF;
+}
+
+.navbar .navbar-brand{
+    color: #DBCDAF;
+    font-family: Aloja;
+}
