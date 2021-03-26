@@ -2,36 +2,45 @@
     require_once 'menu.php';
 ?>
 
-<div class="row">
-    <div class="col-md-6 text-center">
-    </div>
-    <div class="col-md-6 text-center">
-        <img src="img/bolo.jpg" alt="" width="300px" height="300px">
-    </div>
+<div class="text-center">
+    <h4>Bem vindo</h4>
+    <br>
+    Somos a <span class="font-weight-bold">Docinho? Pode!</span>
+    <br>
+    Uma empresa especializada em doces feitos com muito amor e carinho visando a melhor qualidade!
 </div>
+
 <br>
-<div class="row">
-    <div class="col-md-6 text-center">
-        <img src="img/cupcake.jpg" alt="" width="300px" height="300px">
+
+<div id="carouselProdutos" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselProdutos" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselProdutos" data-slide-to="1"></li>
+        <li data-target="#carouselProdutos" data-slide-to="2"></li>
+        <li data-target="#carouselProdutos" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item text-center active">
+            <img class="d-block w-50 mx-auto" src="img/bolo.jpg" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item text-center">
+            <img class="d-block w-50 mx-auto" src="img/cupcake.jpg" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item text-center">
+            <img class="d-block w-50 mx-auto" src="img/naked cake.jpg" alt="Terceiro Slide">
+        </div>
+        <div class="carousel-item text-center">
+            <img class="d-block w-50 mx-auto" src="img/taca.jpg" alt="Terceiro Slide">
+        </div>
     </div>
-    <div class="col-md-6 text-center">
-    </div>
-</div>
-<br>
-<div class="row">
-    <div class="col-md-6 text-center">
-    </div>
-    <div class="col-md-6 text-center">
-        <img src="img/naked cake.jpg" alt="" width="300px" height="300px">
-    </div>
-</div>
-<br>
-<div class="row">
-    <div class="col-md-6 text-center">
-        <img src="img/taca.jpg" alt="" width="300px" height="300px">
-    </div>
-    <div class="col-md-6 text-center">
-    </div>
+    <a class="carousel-control-prev" href="#carouselProdutos" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselProdutos" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+    </a>
 </div>
 
 <?php
